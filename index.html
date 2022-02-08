@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="./style.css" rel="text/css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Consulta CEP</h1>
+
+        <div id="containInput">
+            
+            <input id="inputCEP" type="number" placeholder="Informe o CEP" maxlength="8" oninput="this.value=this.value.slice(0,this.maxLength)">
+
+            <button id="btnSearch">
+                <img src="./icons/search_white_24dp.svg" alt="">
+            </button>
+
+        </div>
+
+        <div id="containResult">
+            <h4>Dados da Consulta:</h4>
+            <p id="cep">CEP:</p>
+            <p id="logra">Logradouro:</p>
+            <p id="comp">Complemento:</p>
+            <p id="bairro">Bairro:</p>
+            <p id="local">Cidade:</p>
+            <p id="uf">UF:</p>
+            <p id="ibge">IBGE:</p>
+            <p id="ddd">DDD:</p>
+        </div>
+
+        <footer>
+            <p>Dev. Guedes</p>
+            <a href="https://github.com/pauloguedes96">
+                <img src="./images/GitHub-Mark-Light-32px.png" alt="">
+            </a>
+        </footer>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
